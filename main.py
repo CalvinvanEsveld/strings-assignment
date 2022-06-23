@@ -1,6 +1,7 @@
 # Do not modify these lines
 __winc_id__ = '71dd124b4a6e4d268f5973db521394ee'
 __human_name__ = 'strings'
+# Add your code after this line
 
 first_goal = 'Ruud Gullit'
 second_goal = 'Marco van Basten'
@@ -25,7 +26,3 @@ chant = (first_name + '! ') * (len(first_name) - 1) + (first_name + '!')
 good_chant = chant[:-1] != ' '
 
 print(last_name_len)
-
-
-
-# Add your code after this line
