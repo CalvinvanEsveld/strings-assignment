@@ -15,12 +15,13 @@ report = f"{first_goal} scored in the {goal_0}nd minute\n{second_goal} scored in
 
 player = 'Ronald Koeman'
 
-first_name = player[player.find('Ronald'): 6]
+first_name = player[:player.find(' ')]
 
-last_name_len = len(player[len(first_name) + 1:])
+last_name_len = len(player[player.find(' ') + 1:])
 
-name_short = first_name[:1] + '. ' + player[len(first_name) + 1:]
+name_short = first_name[:1] + '. ' + player[player.find(' ') + 1:]
 
 chant = (first_name + '! ') * (len(first_name) - 1) + (first_name + '!')
 
-good_chant = chant[:-1] != ' '
+good_chant = chant[-1] != ' '
+
